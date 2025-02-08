@@ -1,0 +1,126 @@
+body {
+    font-family: "Poppins", serif;
+}
+
+
+.navbar-brand {
+    font-family: "Pacifico", serif;
+    font-size: 2rem;
+    color: green;
+}
+
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/banner.jpg) center/cover no-repeat;
+}
+
+.banner h1,
+.hot h2 {
+    font-size: 2rem;
+}
+
+.hot-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.hot-card:hover {
+    transform: scale(1.05);
+}
+
+.hot-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Overlay hitam transparan */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hot-card:hover::before {
+    opacity: 1;
+}
+
+.hot-card-body h5,
+.hot-card-body p {
+    transition: color 0.3s ease;
+}
+
+.icon-pelayanan {
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: solid white 2px;
+    border-radius: 50%;
+}
+
+.hover-effect {
+    padding-top: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.hot a {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hot a:hover {
+    transform: scale(1.05);
+}
+
+.carousel-inner {
+    padding: 1rem;
+}
+
+.produk .card {
+    margin: 0 .5rem;
+}
+
+footer a:hover {
+    color: #f8b400 !important;
+    /* Warna highlight saat hover */
+}
+
+
+/* Untuk Laptop (Layar besar) */
+@media screen and (min-width: 1025px) {
+    html {
+        font-size: 112.5%;
+        /* 112.5% dari 16px = 18px */
+    }
+}
+
+/* Untuk Tablet (Layar sedang) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 100%;
+        /* 100% dari 16px = 16px */
+    }
+}
+
+/* Untuk Mobile (Layar kecil) */
+@media screen and (min-width: 767px) {
+    html {
+        font-size: 87.5%;
+        /* 87.5% dari 16px = 14px */
+    }
+
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+}
