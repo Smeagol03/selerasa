@@ -14,9 +14,8 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/banner.jpg) center/cover no-repeat;
 }
 
-.banner h1,
-.hot h2 {
-    font-size: 2rem;
+.banner h1 {
+    font-size: 3rem;
 }
 
 .hot-card {
@@ -66,7 +65,7 @@ body {
 
 .hover-effect:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hot a {
@@ -108,19 +107,9 @@ footer a:hover {
 }
 
 /* Untuk Mobile (Layar kecil) */
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
     html {
         font-size: 87.5%;
         /* 87.5% dari 16px = 14px */
-    }
-
-    .carousel-inner {
-        display: flex;
-    }
-
-    .carousel-item {
-        display: block;
-        margin-right: 0;
-        flex: 0 0 calc(100%/3);
     }
 }
