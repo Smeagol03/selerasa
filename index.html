@@ -138,7 +138,7 @@
                         </div>
                         <div class="text-light text-center my-3">
                             <h6>Pengantaran</h6>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Kami menyediakan layanan pengantaran cepat dan aman langsung ke lokasi Anda.</p>
                         </div>
                     </div>
 
@@ -150,7 +150,7 @@
                         </div>
                         <div class="text-light text-center my-3">
                             <h6>Ambil Sendiri</h6>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Anda dapat mengambil pesanan Anda langsung di toko kami dengan mudah dan cepat.</p>
                         </div>
                     </div>
                     <div class="col-md-3 my-4 hover-effect">
@@ -161,7 +161,8 @@
                         </div>
                         <div class="text-light text-center my-3">
                             <h6>Catering Service</h6>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Kami menawarkan layanan catering untuk berbagai acara dengan menu yang beragam dan lezat.
+                            </p>
                         </div>
                     </div>
 
@@ -174,7 +175,7 @@
         <div class="container-fluid py-5">
             <div class="container">
                 <h2 class="text-dark text-center" style="font-family: Pacifico, serif">Our Menu</h2>
-                <span class="d-flex py-3 justify-content-center">Makanan</span>
+                <p class="d-flex py-3 justify-content-center">Makanan</p>
                 <div
                     class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 d-flex justify-content-center mx-0">
                     <div class="col mt-3 px-1">
@@ -231,7 +232,7 @@
                     </div>
                 </div>
                 <!-- Minuman -->
-                <span class="d-flex pt-5 pb-3 justify-content-center">Minuman</span>
+                <p class="d-flex pt-5 pb-3 justify-content-center">Minuman</p>
 
                 <div
                     class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 d-flex justify-content-center mx-0">
@@ -287,9 +288,37 @@
                 </div>
             </div>
         </div>
-
     </section>
 
+    <section class="booking bg-success" id="booking">
+        <div class="container-fluid py-5">
+            <div class="container">
+                <h2 class="text-light text-center" style="font-family: Pacifico, serif">Pesan kebutuhanmu</h2>
+                <p class="d-flex text-light justify-content-center">Punya acara? Beritahu kami kebutuhanmu</p>
+            </div>
+            <form class="col-md-6 text-light mx-auto" id="bookingForm">
+                <div class="mb-3">
+                    <label for="exampleInputNama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="exampleInputNama" aria-describedby="namaHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputAcara" class="form-label">Acara</label>
+                    <input type="text" class="form-control" id="exampleInputAcara">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputAlamat" class="form-label">Alamat</label>
+                    <input type="text" class="form-control" id="exampleInputAlamat">
+                    <div id="alamatHelp" class="form-text text-light">Disarankan untuk menyalin dan menempelkan alamat
+                        langsung dari Google Maps agar lebih akurat.</div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-light text-success" onclick="sendWhatsAppMessage()">
+                        Kirim
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
     <footer class="bg-dark text-light pt-4">
         <div class="container">
             <div class="row">
