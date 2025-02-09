@@ -4,9 +4,17 @@ body {
 
 
 .navbar-brand {
-    font-family: "Pacifico", serif;
-    font-size: 2rem;
-    color: green;
+    font-family: "Poppins", serif;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-brand span {
+    font-family: "Poppins", serif;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255, 115, 0);
 }
 
 .banner {
@@ -82,6 +90,12 @@ body {
 
 .produk .card {
     margin: 0 .5rem;
+}
+
+.table img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer a:hover {
